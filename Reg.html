@@ -1,0 +1,142 @@
+
+<html>
+<head>
+<link href="../../../assests/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2  class="bg-success"> Registration Form  </h2>
+
+<div>
+    <form >
+        <div class="form-group row ">
+            <label class="col-2" > First Name:</label>
+            <div class="col-10">
+                <input type="text" class="form-control" id="First Name">
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="form-group row">
+            <label class="col-2" >Middle Name:</label>
+            <div class="col-10">
+                <input type="text" class="form-control" id="Middle Name">
+            </div>
+        </div>
+        <br>
+         
+        <div class="form-group row">
+            <label class="col-2" >Last Name: </label>
+            <div class="col-10">
+                <input type="text" class="form-control" id="Last Name">
+            </div>
+        </div>
+        <br>
+       
+        </div>
+        <div class ="form-group row">
+            <label class="col-2"> DateOfBirth:</label>
+        <div class="col-10">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <br>
+        <div class="form group row">
+            <label class="col-2"> Gender:</label>
+        <div class="col-10">
+            <input type="radio" >Male
+            <input type="radio" >FeMale
+        </div>
+        <br>
+       <br>        
+        <div class="form-group row">
+            <label class="col-2">Mobile Number:</label>
+            <div class="col-10">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="form group row">
+            <label class="col-2">Select the Course:</label>
+        <div class="col-10" >
+            <select class="form-control">
+                <option>Select the Course</option>
+                <option>ReactJS</option>
+                <option>NodeJS</option>
+                <option>JavaFull Stack</option>
+                <option>PythonFull Stack</option>
+
+
+            </select>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+
+
+        <div class="form-group row">
+            <label class="col-2">Fill the Complete Address</label>
+           <div class="col-10">
+            <textarea rows="5" class="form-control"></textarea>
+           </div>
+        </div>
+        <br>
+        <br>
+        
+        
+        
+        <div class="row mt-2">
+            <label class="col-2"></label>
+            <div class="col-10">
+                <input type="button" class="btn btn-primary" onclick="showAlertMessage()" value="Save">
+                <input type="reset" class="btn btn-secondary" value="Cancel">
+            </div>
+
+        </div>
+    </form>    
+
+</div>
+
+
+</body>
+<script>
+    function showAlertMessage(){
+    var string ="Registration Form Completed";
+    alert(string);
+    
+    //alert(document.getElementById("Last Name").value);
+
+    //alert(document.querySelector("#First Name").value);
+    //alert(document.querySelector(".form-control").value);
+    //alert(document.querySelector("[type='button']").value);
+    //alert(document.querySelectorAll("[type='date']")[0].value);
+    alert(document.querySelectorAll("[id]")[0].value);
+    alert(document.querySelectorAll("[id]")[1].value);
+    alert(document.querySelectorAll("[id]")[2].value);
+   alert(document.querySelectorAll("[class='form-control']")[0].value);
+   alert(document.querySelectorAll("[class='form-control']")[1].value);
+   alert(document.querySelectorAll("[class='form-control']")[2].value);
+
+
+
+    
+   //alert(document.getElementById("Last Name").value);
+   // alert(document.getElementsByClassName("form-control")[3].value);
+   // alert(document.getElementsByClassName("form-control")[5].value);
+   // alert(document.getElementsByClassName("form-control")[6].value);
+   // alert(document.getElementsByTagName("input")[0].value);
+   // alert(document.getElementsByTagName("input")[1].value);
+   // alert(document.getElementsByTagName("input")[2].value);
+
+    }
+    //function showMessage(){
+      //let h1=  document.createElement("h1")
+     // h1.innerHTML="this is heading tag"
+     // document.log(h1)
+   // }
+    
+
+    </script>
+</html>
